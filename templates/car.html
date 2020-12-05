@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 6px 12px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+h1 {text-align: center;}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+
+</ul>
+</head>
+
+<body class="centered-wrapper">
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="content">
+      <h1 class="header center orange-text">Car Condition Evaluation</h1>
+      <div class="row center">
+        <h2 class="header col s12 light">Evaluate the condition of the car
+        </h2>
+
+    <form action='/' method="POST" class="col s12">
+
+		<label for="buying"><b>Buying Price</b></label>
+    <select id="buying" name="buying">
+      <option value="0">Low</option>
+      <option value="0.333">Medium</option>
+      <option value="0.667">High</option>
+	  <option value="1">Very High</option>
+    </select>
+		
+		<label for="maint"><b>Maintanance Cost </b></label>
+    <select id="maint" name="maint">
+      <option value="0">Low</option>
+      <option value="0.333">Medium</option>
+      <option value="0.667">High</option>
+	  <option value="1">Very High</option>
+    </select>
+	
+	<label for="doors"><b>No of Doors</b></label>
+    <select id="doors" name="doors">
+      <option value="0">2</option>
+      <option value="0.333">3</option>
+      <option value="0.667">4</option>
+	  <option value="1">5 or more</option>
+    </select>
+	
+		<label for="persons"><b>No of Persons</b></label>
+    <select id="persons" name="persons">
+      <option value="0">2</option>
+      <option value="0.5">4</option>
+      <option value="1">more</option>
+    </select>
+	
+	<label for="lug_boot"><b>Boot Space</b></label>
+    <select id="lug_boot" name="lug_boot">
+      <option value="0">small</option>
+      <option value="0.5">Medium</option>
+      <option value="1">Big</option>
+    </select>
+	
+
+	<label for="safety"><b>Saftey </b></label>
+    <select id="safety" name="safety">
+      <option value="0">Low</option>
+      <option value="0.5">Medium</option>
+      <option value="1">High</option>
+
+
+<input type="submit" value="Submit">
+    </select>
+		
+		
+    </form>
+      </div><b><h2 style="text-align:center;">
+        {{prediction_text}}</b></h2><br>
+
+    </div>
+  </div>
+
+    <br><br>
+  </div>
+  </div>
+
+
+ 
+  
+  <!-- Footer -->
+<footer class="page-footer font-small blue">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+  <br> Contact :
+    <a href="https://github.com/amolkumarpatil"> amolkumar.work@gmail.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+  
+  
+  </body>
+</html>
+
