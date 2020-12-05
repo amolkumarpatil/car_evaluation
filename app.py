@@ -31,7 +31,7 @@ def home():
 
 def model_predict(final_features):
     loaded_model = pickle.load(
-        open(r"H:\workspace\flask_resources\github_projects\car_evaluation\svm_model.pkl", 'rb'))
+        open("svm_model.pkl", 'rb'))
     print(loaded_model.predict(final_features))
     return loaded_model.predict(final_features)
 
